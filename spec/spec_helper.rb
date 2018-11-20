@@ -1,4 +1,3 @@
-ENV['RACK_ENV'] = 'test'
 
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
@@ -7,15 +6,25 @@ require 'capybara'
 require 'rspec'
 require 'simplecov'
 require 'simplecov-console'
+require_relative './setup_test_database'
+
+ENV['RACK_ENV'] = 'test'
+ENV['ENVIRONMENT'] = 'test'
 
 Capybara.app = BookmarkManager
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new(
   [SimpleCov::Formatter::Console]
 )
+
 SimpleCov.start
 
 RSpec.configure do |config|
+
+  config.before(:each) do
+   setup_test_database
+  end
+
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
   end
