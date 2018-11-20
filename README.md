@@ -10,7 +10,12 @@ A web app for users to store and manage bookmarks to web pages.
 As a user,
 So that I can see which bookmarks I have stored,
 I want the bookmark manager to show me a list of them.
+
+As a user,
+So that I can store my favourite bookmarks,
+I want save the bookmark to look at later.
 ```
+
 
 ### To set up the database
 1. First connect to psql by typing `psql` in the command line

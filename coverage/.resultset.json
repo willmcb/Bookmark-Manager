@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/willmcbrien/Development/makers/on_site_course/pairing_exercises/bookmark-manager-ajay/Bookmark-Manager/spec/bookmark_spec.rb": [
+      "/Users/ajaym/Projects/bookmark_manager/spec/bookmark_spec.rb": [
         1,
         1,
         null,
@@ -24,7 +24,18 @@
         null,
         null
       ],
-      "/Users/willmcbrien/Development/makers/on_site_course/pairing_exercises/bookmark-manager-ajay/Bookmark-Manager/spec/features/viewing_bookmarks_spec.rb": [
+      "/Users/ajaym/Projects/bookmark_manager/spec/features/create_bookmark_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/ajaym/Projects/bookmark_manager/spec/features/viewing_bookmarks_spec.rb": [
         null,
         1,
         null,
@@ -45,6 +56,6 @@
         null
       ]
     },
-    "timestamp": 1542728793
+    "timestamp": 1542734087
   }
 }
