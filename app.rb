@@ -4,11 +4,11 @@ require './lib/bookmark'
 # controller for Bookmark Manager web app
 class BookmarkManager < Sinatra::Base
   get '/' do
-    erb :index
+    erb :bookmarks
   end
 
-  get '/list' do
-    @bookmarks = Bookmark.new.bookmarks
-    erb :list
+  get '/bookmarks' do
+    @bookmarks = Bookmark.all
+    erb :bookmarks
   end
 end

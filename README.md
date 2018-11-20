@@ -6,7 +6,8 @@ A web app for users to store and manage bookmarks to web pages.
 
 ## User stories
 
-```As a user,
+```
+As a user,
 So that I can see which bookmarks I have stored,
 I want the bookmark manager to show me a list of them.
 ```
